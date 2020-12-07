@@ -1,0 +1,118 @@
+\documentclass[a4paper,12pt]{article} % This defines the style of your paper
+\usepackage[brazilian]{babel} 
+\usepackage[top = 2.5cm, bottom = 2.5cm, left = 2.5cm, right = 2.5cm]{geometry} 
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{multirow} 
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx} 
+
+\usepackage{setspace}
+\setlength{\parindent}{0in}
+
+% Package to place figures where you want them.
+\usepackage{float}
+
+% The fancyhdr package let's us create nice headers.
+\usepackage{fancyhdr}
+
+% To make our document nice we want a header and number the pages in the footer.
+
+\pagestyle{fancy} % With this command we can customize the header style.
+
+\fancyhf{} % This makes sure we do not have other information in our header or footer.
+
+\lhead{\footnotesize Atividade sobre LaTex}% \lhead puts text in the top left corner. \footnotesize sets our font to a smaller size.
+
+%\rhead works just like \lhead (you can also use \chead)
+\rhead{\footnotesize Daniel Magalhães Nunes} %<---- Fill in your lastnames.
+
+% Similar commands work for the footer (\lfoot, \cfoot and \rfoot).
+% We want to put our page number in the center.
+\cfoot{\footnotesize \thepage} 
+
+
+	
+\begin{document}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% Title section of the document
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	% For the title section we want to reproduce the title section of the Problem Set and add your names.
+	
+	\thispagestyle{empty} % This command disables the header on the first page. 
+	
+	\begin{tabular}{p{15.5cm}} % This is a simple tabular environment to align your text nicely 
+		{\large \bf CK0033 - INTRODUÇÃO A COMPUTAÇÃO} \\
+		 Universidade Federal do Ceará \\ 
+		 Daniel Magalhães Nunes, 376163 \\ 2020.2 \\
+		\hline % \hline produces horizontal lines.
+		\\
+	\end{tabular} % Our tabular environment ends here.
+	
+	\vspace*{0.3cm} % Now we want to add some vertical space in between the line and our title.
+	
+	\begin{center} % Everything within the center environment is centered.
+		{\Large \bf Atividade sobre LaTex} % <---- Don't forget to put in the right number
+		\vspace{2mm}
+		
+	\end{center}  
+	
+	\vspace{0.4cm}
+	
+	
+	Colocar no LaTeX os exercícios 14, 15 e 16 do capítulo 3 de \cite{MorettinBussab2005}
+	
+	\begin{enumerate}
+		\item[14.] Mostre que:
+		\begin{enumerate}
+			\item $ \displaystyle\sum_{i=1}^{n} \left( x_i - \overline{x} \right) = 0  $
+			\item $ \displaystyle\sum_{i=1}^{n} \left( x_i - \overline{x} \right)^2 = \displaystyle\sum_{i=1}^{n} x_i^2 - n\overline{x}^2 = \displaystyle\sum_{i=1}^{n} x_i^2 - \dfrac{ \left(   \sum x_i \right)^2 }{n}   $
+			\item $ \displaystyle\sum_{i=1}^{k} n_i \left( x_i - \overline{x} \right)^2 =  \displaystyle\sum_{i=1}^{n} n_i x_i^2 - n \overline{x}^2$
+			\item $ \displaystyle\sum_{i=1}^{k} f_i \left( x_i - \overline{x}  \right)^2 = f_i x_i^2 - \overline{x}^2 $
+		\end{enumerate}
+	
+		\item[15.] Usando os resultados da questão anterior, calcule as variâncias dos problemas  1 e 2 deste capítulo.
+		
+		\item[16.] Os dados abaixo representam as vendas semanais, em classes de salários mínimos, de vendedores de gêneros alimentícios:
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{c|c}
+					\hline
+				Vendas semanais	&     Nº de vendedores  \\ \hline
+					\multirow{7}{*}{}
+					     30 $ \vdash $ 35           &  2
+					\multirow{9}{*}{} \\
+				35 $ \vdash $ 40	&          10         \\
+				40 $ \vdash $ 45	&          18        \\
+				45 $ \vdash $ 50	&          50       \\
+				50 $ \vdash $ 55	&             70      \\
+				55 $ \vdash $ 60	&              30     \\
+				60 $ \vdash $ 65	&              18    \\
+				65 $ \vdash $ 70	&               2    \\ \hline
+				\end{tabular}
+			\end{table}
+		
+		\begin{enumerate}
+			\item Faça o histograma das observações.
+			\item Calcule a média da amostra, $ \overline{x} $.
+			\item Calcule o desvio padrão da amostra, $s$.
+			\item Qual a porcentagem das observações compreendidas entre $ \overline{x} - 2s $ e $ \overline{x} + 2s $ ?
+			\item Calcule a mediana.
+	    \end{enumerate}
+
+
+	\end{enumerate}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\newpage
+	\bibliographystyle{apalike}
+	\bibliography{bib_latex}
+	
+	
+	
+\end{document}
+	

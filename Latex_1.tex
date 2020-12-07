@@ -1,0 +1,233 @@
+% Início do preâmbulo
+% Classe do documento
+\documentclass[12pt]{article}
+
+% Compreender a acentuação feita direto pelo teclado 
+% utf8: codificação de caracteres
+% Veja: http://www.alessandroduarte.com.br/?page_id=105.
+\usepackage[utf8]{inputenc}  
+
+% Idioma: hifenização, nomes em português para capítulos, seções...
+\usepackage[brazilian]{babel} 
+
+% muda a condificação da fonte, tornando possível copiar textos com acentos
+% Veja: http://wiki.inf.ufpr.br/maziero/lib/exe/fetch.php?media=software:latex-t1-fontenc.pdf
+\usepackage[T1]{fontenc}
+
+% estrutura: página e margens
+% https://www.overleaf.com/learn/latex/page_size_and_margins
+\usepackage[a4paper, top=3cm, right=2cm, left=2cm, bottom = 3cm]{geometry}
+
+% Mudar o algarismo da numeração das páginas (padrão: arábicos)
+% Se colocado em qualquer parte do corpo do documento, a numeração a partir daí será iniciada novamente com o novo estilo de numeração declarado.
+\pagenumbering{alph} % alph, Alph, roman, Roman, arabic
+
+% Espaçamento entre linhas
+\usepackage{setspace} 
+\setstretch{1.0} % 1.5 
+
+% Permite a inserção de figuras ou gráficos no texto
+\usepackage{graphicx} 
+
+
+% Permite mudar o estilo do contador no ambiente enumerate
+% Opções: A, a (alfabeto);  I, i (romanos); 1 (arábicos)
+% Estas opções podem ser combinadas com qualquer string, no entanto, 
+% as opções A, a, I, i, 1 devem estar dentro de um {} grupo se
+% elas não devam ser considerados especiais.
+\usepackage{enumerate}
+
+% Recua a 1a. linha de todas a seções
+% Criar parágrafos com ou sem identação/recuo: \indent \noindent
+\usepackage{indentfirst} 
+
+% Fixar as imagens/figuras no local em que foram colocadas
+\usepackage{float} 
+
+% Fornece recursos para facilitar a escrita de fórmulas matemáticas
+% e para melhorar a qualidade tipográfica
+\usepackage{amsmath}
+
+
+% Definindo novos comandos 
+\newcommand{\amostra}{$X_1,X_2,\ldots,X_n$}
+\newcommand{\real}{\mbox{$I\!\!R$}}
+\newcommand{\Real}{I\!\!R}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\mat}[1]{\mbox{\boldmath{$#1$}}} % Usar negrito no ambiente matemático
+%\renewcommand{\Re}{I\!R} % \Re já é definido pelo LaTeX, para redefini-lo use o \renewcommand
+
+
+% Informações do documento
+\title{Estimação de Parâmetros}
+\author{Aluno(s)}
+\date{\today{}}
+
+% Estabelece o estilo (cabeçalho e rodapé) da página no documento; mais usual na classe de documento "book". 
+%\pagestyle{empty} % cabeçalho e rodapé em branco; sem numeração 
+% \pagestyle{plain} % é o estilo padrão: cabeçalho em branco e rodapé com o número da página ao centro
+% \pagestyle{headings} % depende da classe do documento
+%\pagestyle{myheadings} % o usuário poderá especificar o cabeçalho; usado em conjunto com um dos comandos \markright ou \markboth, este último no caso de documentos da classe "book"
+%\markright{\LaTeX}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Fim do preâmbulo
+% Início do corpo do documento
+\begin{document}
+
+% Inserir as informações do documento
+\maketitle
+
+% Estabelece o estilo da página corrente
+\thispagestyle{empty}
+
+\section{Introdução}
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+
+\section{Amostragem aleatória simples}
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+
+\section{Propriedades dos estimadores}
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+
+\subsection{Estimadores não tendenciosos}
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+
+
+\subsection{Variância de um estimador}
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+Os momentos Momento de uma variável aleatória ou de uma distribuição de probabilidade são os valores esperados de potências da variável aleatória. Dois momentos muito utilizados são a esperança e a variância de uma variável aleatória. A esperança é uma medida de posição da distribuição, e a variância, de dispersão dos valores da distribuição de probabilidade. Os momentos podem ser usados para auxiliar a caracterização da distribuição.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Nova página
+\newpage 
+%\thispagestyle{empty}
+
+
+% Criar uma seção
+\section{Ambiente enumerate}
+
+\noindent \textbf{Exemplo 1}
+
+\begin{enumerate}
+    \item método da máxima verossimilhança
+    \item método dos momentos
+    \item método dos mínimos quadrados
+\end{enumerate}
+
+
+\noindent \textbf{Exemplo 2}
+\begin{enumerate} [{exemplo} a)]
+    \item método da máxima verossimilhança
+    \item método dos momentos
+    \item método dos mínimos quadrados
+\end{enumerate}
+
+
+\noindent \textbf{Exemplo 3}
+\begin{enumerate} [{A}-1)]
+    \item método da máxima verossimilhança
+    \item método dos momentos
+    \item método dos mínimos quadrados
+\end{enumerate}
+
+
+\noindent \textbf{Exemplo 4}
+\begin{enumerate} [A]
+    \item método da máxima verossimilhança
+    \item método dos momentos
+    \item método dos mínimos quadrados
+\end{enumerate}
+
+
+\section{Ambiente itemize}
+
+\noindent \textbf{Exemplo 5}
+\begin{itemize}
+    \item método da máxima verossimilhança
+    \item método dos momentos
+    \item método dos mínimos quadrados
+\end{itemize}
+
+\noindent \textbf{Exemplo 6}
+\begin{itemize}
+    \item[$\surd$] método da máxima verossimilhança
+    \item[$\surd$] método dos momentos
+    \item[$\surd$] método dos mínimos quadrados
+\end{itemize}
+
+\noindent \textbf{Exemplo 7}
+\begin{itemize}
+    \item[M1.] método da máxima verossimilhança
+    \item[M2.] método dos momentos
+    \item[M3.] método dos mínimos quadrados
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Nova página
+\newpage 
+
+\section{Ambientes e notação matemática}
+
+\noindent \textbf{Notações}
+\begin{enumerate}
+    \item Subscrito e sobrescrito: $X_1, \ldots, X_n$,  $X_{12}$, $X_{y_a}$, $X^{(a+2)}$, $X^{y^a_b}$, $X_a^b$
+	\item Média populacional: $\mu$
+	\item Variância populacional: $ \sigma^2 =  \frac{\sum_{i=1}^{N} (x_i-\mu)^2}{N} $ ou $ \sigma^2 =  \dfrac{\sum_{i=1}^{N} (x_i-\mu)^2}{N} $ ou $ \sigma^2 =  \dfrac{\displaystyle\sum_{i=1}^{N} (x_i-\mu)^2}{N}$
+	\item Logaritmo de $2x+5$: $\log(2x+5)$
+    \item Desigualdades: $x\neq y$, $ x\ge y$, $x \le y$
+    \item Na Estatística, usamos a letra grega $\sigma$ para representar uma medida populacional (parâmetro) e denotamos o seu estimador por $\hat{\sigma}$.
+    \item Derivadas parciais: $\dfrac{\partial{ f(x,y)}}{\partial{x}}$ ou $\dfrac{\partial{}}{\partial{x}}f(x,y)$
+    \item Parênteses, colchetes e chaves: $\left( \dfrac{n-1}{4} \right)$, $\left[ \dfrac{n-1}{4} \right]$,  $\left\{ \dfrac{n-1}{4} \right\}$
+    \item Integrais: $\int_{\lambda}^{1} x^2 dx$ ou  $\displaystyle\int_{\lambda}^{1} x^2 dx$
+    \item Mínimos e máximos:: $Y=\mbox{min}\{X_1,\ldots,X_n\}$ e $Z=\mbox{máx}\{X_1,\ldots,X_n\}$ (sem o comando mbox, será gerada uma advertência por usar acentos no modo matemático)
+\end{enumerate}    
+
+\noindent \textbf{{Ambiente eqnarray:}} alinhar verticalmente uma ou várias equações com ou sem numeração
+\begin{eqnarray*} % o asterisco no final do nome do ambiente indica ambiente sem numeração
+A & = & B\\
+C & = & D\\
+E & = & F
+\end{eqnarray*}
+
+
+\begin{eqnarray} % ambiente com numeração em cada expressão
+A & = & B\\ 
+C & = & D\\ 
+E & = & F
+\end{eqnarray}
+
+
+\begin{eqnarray} 
+A & = & B\\ 
+\nonumber C & = & D\\  % \nonumber retira a numeração da expressão
+\nonumber E & = & F
+\end{eqnarray}
+
+
+\noindent \textbf{{Ambiente align:}} alinhar verticalmente uma ou várias equações com ou sem numeração
+\begin{align*}
+A & = B\\
+C & = D\\
+E & = F
+\end{align*}
+
+
+\begin{align}
+A & = B\\
+C & = D\\ 
+\nonumber E & = F
+\end{align}
+
+\end{document}
