@@ -55,8 +55,166 @@
 		\hline % \hline produces horizontal lines.
 		\\
 	\end{tabular} % Our tabular environment ends here.
-	
 	\vspace*{0.3cm} % Now we want to add some vertical space in between the line and our title.
+	
+	\begin{center} % Everything within the center environment is centered.
+		{\Large \bf Trabalho1 - Latex - Escrita do arquivo Trabalho3-LAtex.pdf} % <---- Don't forget to put in the right number
+		\vspace{2mm}
+		
+	\end{center}  
+	
+	\vspace{0.4cm}
+	\vspace*{0.3cm} % Now we want to add some vertical space in between the line and our title.
+	
+	
+	\begin{center}	
+		{\Large \bf Inferência Estatística para Uma Única Amostra}
+	\end{center}
+	
+	\vspace{0,4cm}
+	
+	
+	
+	
+	\begin{blockquote}
+		\begin{center}
+			\vspace{0,2cm}
+			\textbf{\underline {Definição: Intervalo de Confiança para a Média com Variância Conhecida}} \ 
+		\end{center}
+		
+		Se $ \overline{x} $ for a média de uma amostra aleatória $n$, de uma população com variância conhecida $\sigma^2 $, um intervalo com $100\left (1 - \alpha \right)\% $ de confiança para $\mu$ é dado por:
+		\begin{equation*}
+			\overline{x} -z_{\alpha / 2 }{\sigma} /\sqrt{n} \leq  \mu \leq \overline{x} +z_{\alpha / 2}{\sigma} /\sqrt{n}
+		\end{equation*}
+		
+		Sendo $z_ {\alpha / 2}$ o ponto superior com $100\alpha/2\%$ da distribuição normal padrão.
+		
+		\vspace{0,2cm}
+		
+		% quase não descubro, como colocar os 100% sem apagar nada kkkk
+		
+		
+	\end{blockquote}
+	\vspace{0,2cm}
+	\thispagestyle{empty}
+	
+	\section*{EXEMPLO 8.6}
+	Considere o problema do foguete do exemplo 8.2. Suponha que queiramos achar um intervalo com $95\%$ de confiança para a taxa média de queima. Podemos usar a Eq. 8.35 para construir o intervalo de confiança. Um intervalo de $95\%$ implica $1-\alpha=0,95; logo, \alpha=0,05$, e da Tabela II no Apêndice, $z_ {\alpha / 2}= z_{0,05/2} = z_{0,025} = 1,96$.
+	\vspace{0,5 cm}
+	\begin{align*}
+		l & = \overline{x} -z_{\alpha / 2 }{\sigma} /\sqrt{n} \\
+		& = 51,3 - 1,96(2)/\sqrt{25} \\
+		& = 51,3 - 0,78 \\
+		& = 50,52
+	\end{align*}
+	e o limite superior é
+	\begin{align*}
+		u & = \overline{x} +z_{\alpha / 2 }{\sigma} /\sqrt{n} \\
+		& = 51,3 + 1,96(2)/\sqrt{25} \\
+		& = 51,3 + 0,78 \\
+		& = 52,08
+	\end{align*}
+	\newpage 
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.6\linewidth]{fig8.8}
+		\caption[]{A distribuição Z.}
+	\end{figure}
+	
+	\begin{center}
+		Desse modo, o intervalo bilateral com $95\%$ de confiança é
+		\begin{equation*}
+			50,52 \leq  \mu \leq52,08
+		\end{equation*}
+		
+	\end{center}
+	
+	Sendo nosso intervalo de valores razoáveis, para a taxa média de queima, com $95\%$ de confiança.
+	
+	
+	\subsection*{Escolha do tamanho da amostra}
+	\vspace{0,2cm}
+	\begin{blockquote}
+		\begin{center}
+			\vspace{0,2cm}
+			\textbf{\underline {Definição}} 
+		\end{center}
+		
+		Se $ \overline{x} $ for usada como uma estimativa de $\mu$, podemos estar $100(1-\alpha)\%$ confiantes de que o erro $|\overline{x}-1|$ não excederá um valor especificado $E$ quando o tamanho da amostra for
+		
+		\begin{equation*}
+			n=\left(\frac{z_{\alpha / 2 }{\sigma}}{E} \right)^2
+		\end{equation*}
+		
+		\vspace{0,2cm}
+	\end{blockquote}
+	\vspace{0,4cm}
+	
+	Note a relação geral entre o tamanho da amostra, o comprimento desejado do intervalo de confiança de $ 100 (1 - \alpha ) \% $ e o desvio-padrão $\sigma$:
+	
+	\begin{itemize}
+		\item À medida que o comprimento desejado do intervalo $2E$ diminui, o tamanho requerido $n$ da amostra aumenta para um valor fixo de $\sigma$ e confiança especificada;
+		\item  À medida que $\sigma$ aumenta, o tamanho requerido $n$ da amostra aumenta para comprimento desejado fixo $\sigma$ $2E$ e confiança especificada;
+		\item À medida que o nível de confiança aumenta, o tamanho requerido $n$ da amostra aumenta para o comprimento desejado fixo $2E$ e desvio-padrão $\sigma$.
+		
+	\end{itemize}
+	
+	\newpage 
+	\subsection*{Intervalo Unilateral de Confiança}
+	É também possível obter intervalos unilaterais de confiança para $\mu$, estabelecendo $l=-\infty$ ou $\mu=\infty$ e trocando $z_{\alpha/2}$ por $z_{\alpha}$.
+	
+	
+	\vspace{0,2cm}
+	\begin{blockquote}
+		\begin{center} 
+			\textbf{O intervalo superior com $100(1-\alpha)\%$ de confiança para $ \mu $ é} 
+		\end{center}
+		
+		
+		\begin{equation*}
+			\mu \leq  u = \overline{x} + z_{\alpha} 
+		\end{equation*}
+		\begin{center} \textbf{e o intervalo inferior com $100(1-\alpha)\%$ de confiança para $ \mu $ é}
+		\end{center}
+		\begin{equation*}
+			\overline{x} -z_{\alpha}{\sigma} /\sqrt{n} =  l \leq \mu
+		\end{equation*}
+	\end{blockquote}
+	\vspace{0,4cm}
+	
+	\subsection*{8.2.7. Método Geral para reduzir um intervalo de Confiança}
+	
+	É fácil dar um método geral para encontrar um intervalo de confiança para parâmetro desconhecio $\theta$. Faça $X1, X2,...X$, ser uma amostra aleatória com $n$ observações. Suponha que possamos encontrar uma estatística $g(X1, X2,...X,;\theta)$ com as seguintes propriedades:
+	\begin{enumerate}
+		\item $g(X1, X2, ..., Xn:\theta$) depende da amostra e de $\theta$ e
+		\item{a distribuição de probabilidade de $g(X1, X2, ..., X: \theta)$ não depende de $\theta$ ou de qualquer outro parâmetro desconhecido.}
+	\end{enumerate}
+	
+	
+	No caso considerado nessa seção, o parâmetro $\theta \ = \mu$. A variável aleatória $g(X1, X2, ..., X_n:\mu)$ = $(\overline{X}-\mu)/({\sigma} /\sqrt{n})$ satisfaz ambas as condições anteriores; ela depende da amostra e de $\mu$ e tem uma distribuição normal padrão desde que $\theta$ seja conhecido. Agora, tem-se de encontrar as constantes $C_L$ e $C_U$ de modo a 
+	
+	\begin{equation*}
+		P[C_L \leq g(X_1, X_2, ..., X_n; \theta) \leq C_U] = 1 - \alpha
+	\end{equation*}
+	Devido à propriedade $2, C_L$ e $C_U$ não depende de $\theta$. Em nosso exemplo, $C_L = z_{\alpha/2}$ e $C_U = z_{\alpha/2}$. Finalmente, você tem de manipular as desigualdades no enuciado de probabilidade, de modo a 
+	
+	\begin{equation*}
+		P[L(X_1, X_2, ..., X_n) \leq \theta \leq U(X_1, X_2, ..., X_n)] = 1 - \alpha
+	\end{equation*} \
+	
+	Isso fornece $L(X_1, X_2, ..., X_n)$ e $U(X_1, X_2, ..., X_n)$ como os limites inferiores e superiores de confiança, definindo o intervalo de confiança de $100(1-\alpha)\%$ para $\theta$. Em nosso exemplo, encontramos $L(X_1, X_2, ..., X_n)= \overline{X} -z_{\alpha}{\sigma} /\sqrt{n}$ e $U(X_1, X_2, ..., X_n)= \overline{X} +z_{\alpha}{\sigma} /\sqrt{n}$.
+	
+	\newpage
+	\section*{8.3 INFERÊNCIA SOBRE A MÉDIA DE UMA POPULAÇÃO COM VARIÂNCIA DESCONHECIDA}
+	
+	Quando estamos testando hipóteses ou construíndo intervalos de confiaça para a média $\mu$ de uma população quando $\sigma^2$ for deseconhecida, podemos usar os procedimentos de testes da Seção 8.2. Entretanto, quando a amostra for pequena e $\sigma^2$ for desconhecida, teremos de fazer uma suposição sobre a forma de distribuição em estudo de modo a obter um procedimento de teste. Uma suposição razoável, em muitos casos, é que a distribuição sob consideração seja normal.
+	
+	\subsection*{8.3.1 Testes de Hipóteses para a Média}
+	
+	Suponha que a população de interesse tenha distribuição normal, com a média $\mu$ e variância $\sigma^2$ desconhecidas. Desejamos testar a hipótese de que $\mu$ seja igual a uma constante $\mu_o$. Note que essa situação é similar àquela da Seção 8.2, exeto que agora ambas, $\mu$ e $\sigma^2$, são desconhecidas. Considere que uma da amostra aleatória de tamanho $n$, como $X1, X2, ... Xn$. seja disponível e sejam $\overline{X}$ e $S^2$ a média e a variância amostral, respectivamente. 
+	Desejamos testar a hipótese alternativa bilateral.
+	
+	\newpage
 	
 	\begin{center} % Everything within the center environment is centered.
 		{\Large \bf Trabalho1 - Latex - Escrita do arquivo Trabalho4-LAtex.pdf} % <---- Don't forget to put in the right number
